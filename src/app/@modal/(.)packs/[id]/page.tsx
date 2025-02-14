@@ -30,8 +30,8 @@ const BookingDrawer = () => {
 
   return (
     <Drawer open onOpenChange={handleClose}>
-      <DrawerContent className="bg-white pb-12">
-        <div className="mx-auto w-full max-h-full max-w-5xl px-6">
+      <DrawerContent className="bg-white pb-12 max-h-[90svh]">
+        <div className="mx-auto max-w-5xl overflow-y-auto px-6">
           <DrawerHeader>
             <DrawerTitle className="text-4xl text-red-600">
               {pack.name}

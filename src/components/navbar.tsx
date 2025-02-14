@@ -1,7 +1,7 @@
 'use client'
 
 import { Sheet, SheetContent } from "@/components/ui/sheet";
-import { MenuIcon } from "lucide-react";
+import { Menu, MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -17,12 +17,18 @@ export const NavBar = () => {
     <header>
       <nav
         aria-label="Global"
-        className="flex border-b border-red-500 items-center justify-between p-6 lg:px-8"
+        className="flex border-b border-red-500 items-center justify-between p-4 lg:px-8"
       >
         <div className="flex lg:flex-1 text-white font-bold text-xl">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Smooth Move</span>
-            <Image width={100} height={100} alt="sm logo" src="/smtve-logo.svg" className="h-9 w-auto" />
+            <Image
+              width={100}
+              height={100}
+              alt="sm logo"
+              src="/smtve-logo.svg"
+              className="sm:h-9 h-6 w-auto"
+            />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -56,7 +62,7 @@ export const NavBar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-6 block px-6 last:border-b-0 border-b-2 border-red-600 py-6 text-3xl font-manrope tracking-wide text-white hover:bg-red-600"
+                    className="-mx-6 block px-6 last:border-b-0 border-b-2 border-red-600 py-6 text-xl sm:text-3xl font-manrope tracking-wide text-white hover:bg-red-600"
                   >
                     {item.name}
                   </a>

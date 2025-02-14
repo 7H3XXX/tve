@@ -40,7 +40,7 @@ const Packs = () => {
   return (
     <div className="flex-1 flex-col flex">
       <Carousel className="w-full flex-1">
-        <CarouselContent className="h-[calc(100vh-84px)]">
+        <CarouselContent className="h-[calc(100svh-54px)] sm:h-[calc(100svh-66px)]">
           {packs.map((pack) => (
             <CarouselItem key={pack.id} className="pl-0">
               <div
@@ -55,7 +55,8 @@ const Packs = () => {
                   <p className="md:mb-6 mb-4 max-w-[42ch] sm:max-w-max text-sm sm:text-base">
                     {pack.description}
                   </p>
-                  <Button asChild
+                  <Button
+                    asChild
                     className="bg-red-700 rounded-full text-lg hover:bg-red-800"
                     size={"lg"}
                   >
@@ -67,9 +68,7 @@ const Packs = () => {
           ))}
         </CarouselContent>
         <CarouselPrevious className="left-4 text-white bg-transparent hover:bg-red-700 hover:text-white" />
-        <CarouselNext
-          className="right-4 text-white bg-transparent hover:bg-red-700 hover:text-white"
-        />
+        <CarouselNext className="right-4 text-white bg-transparent hover:bg-red-700 hover:text-white" />
       </Carousel>
       {/* <BookDrawer /> */}
     </div>

@@ -67,11 +67,10 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-balance text-5xl font-semibold tracking-tight text-neutral-100 sm:text-7xl">
-              Une expérience qui <span className="text-7xl">vous</span>{" "}
-              rapproche
+            <h1 className="text-balance text-4xl sm:text-7xl font-semibold tracking-tight text-neutral-100">
+              Une expérience qui vous rapproche
             </h1>
-            <p className="mt-8 text-pretty text-lg font-medium text-neutral-200 sm:text-xl/8">
+            <p className="mt-8 text-pretty text-base font-medium text-red-200 sm:text-xl">
               Sortez de la routine et offrez vous un moment d&apos;exception
               avec votre âme sœur pour renforcer vos liens.
             </p>
