@@ -41,7 +41,7 @@ const Packs = () => {
     <div className="flex-1 flex-col flex">
       <Carousel className="w-full flex-1">
         <CarouselContent className="h-[calc(100vh-84px)]">
-          {packs.map((pack, _) => (
+          {packs.map((pack) => (
             <CarouselItem key={pack.id} className="pl-0">
               <div
                 className="w-full h-full relative overflow-hidden flex aspect-[1872/474] items-end bg-cover bg-center justify-start"

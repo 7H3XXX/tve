@@ -2,6 +2,7 @@
 
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,10 +20,10 @@ export const NavBar = () => {
         className="flex border-b border-red-500 items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1 text-white font-bold text-xl">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Smooth Move</span>
-            <img alt="sm logo" src="/smtve-logo.svg" className="h-9 w-auto" />
-          </a>
+            <Image width={100} height={100} alt="sm logo" src="/smtve-logo.svg" className="h-9 w-auto" />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button

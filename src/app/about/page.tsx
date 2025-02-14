@@ -58,7 +58,7 @@ const About = () => {
           <br />
           <TextGradientOpacityOnScroll
             text={
-              "Alors, que choisirez-vous pour tracer la route de votre Saint-Valentin ? Une douce balade, une échappée romantique, ou une            halte gourmande ? Quel que soit votre choix, Smooth Move vous ouvre les portes d’une expérience à la hauteur de vos plus belles émotions"
+              "Alors, que choisirez-vous pour tracer la route de votre Saint-Valentin ? Une douce balade, une échappée romantique, ou une            halte gourmande ? Quel que soit votre choix, Smooth Move vous ouvre les portes d’une expérience à la hauteur de vos plus belles émotions."
             }
           />
           <div className="h-[80vh]" />

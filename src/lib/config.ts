@@ -17,8 +17,7 @@ export const defaultMetadata: Metadata = {
   },
   authors: [{ name: "SM" }],
   creator: "SM Team",
-  metadataBase: new URL("http://localhost:3000"
-  ),
+  metadataBase: new URL("http://localhost:3000"),
   robots: { index: true, follow: false },
   description:
     "Sortez de la routine et offrez vous un moment d'exception avec votre âme sœur pour renforcer vos liens.",

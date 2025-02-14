@@ -1,5 +1,6 @@
 import { defaultMetadata } from "@/lib/config";
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Sortez de la routine et offrez vous un moment d'exception avec votre âme sœur pour renforcer vos liens.",
   },
-}; 
+};
 
 const Home = () => {
   return (
@@ -27,27 +28,37 @@ const Home = () => {
               Ils l&apos;ont essayé et la recommande{" "}
               <div className="flex ml-2 -space-x-2">
                 {" "}
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />{" "}
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />{" "}
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
                 />{" "}
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />{" "}
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
@@ -61,8 +72,8 @@ const Home = () => {
               rapproche
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-neutral-200 sm:text-xl/8">
-              Sortez de la routine et offrez vous un moment d'exception avec
-              votre âme sœur pour renforcer vos liens.
+              Sortez de la routine et offrez vous un moment d&apos;exception
+              avec votre âme sœur pour renforcer vos liens.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

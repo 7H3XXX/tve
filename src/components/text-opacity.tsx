@@ -45,7 +45,7 @@ const TextGradientOpacityOnScroll = ({
     return text.split("").map((char, index) => (
       <span
         key={index}
-        //@ts-ignore
+        //@ts-expect-error
         ref={(el) => (textRefs.current[index] = el)}
         className="opacity-20"
       >

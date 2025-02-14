@@ -1,8 +1,5 @@
 "use client";
 import {
-  DataInteractive,
-  Field,
-  Label,
   Radio,
   RadioGroup,
 } from "@headlessui/react";
@@ -20,7 +17,7 @@ export const BookingForm = ({
   packName: string;
   hasWhiteContainer?: boolean;
 }) => {
-  let [selected, setSelected] = useState(dates[0]);
+  const [selected, setSelected] = useState(dates[0]);
   return (
     <>
       <RadioGroup
@@ -49,9 +46,13 @@ export const BookingForm = ({
       <Button
         asChild
         disabled={!!selected}
-        className={cn("bg-white hover:bg-white text-red-700 border border-white shadow-sm rounded-full text-lg hover:scale-105", {
-            "bg-red-600 text-white hover:bg-red-700 w-full sm:w-fit":!!hasWhiteContainer
-        })}
+        className={cn(
+          "bg-white hover:bg-white text-red-700 border border-white shadow-sm rounded-full text-lg hover:scale-105",
+          {
+            "bg-red-600 text-white hover:bg-red-700 w-full sm:w-fit":
+              !!hasWhiteContainer,
+          }
+        )}
         size={"lg"}
       >
         <Link

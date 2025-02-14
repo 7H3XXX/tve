@@ -7,7 +7,6 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
 } from "@/components/ui/drawer";
@@ -22,7 +21,7 @@ const BookingDrawer = () => {
   const router = useRouter();
   const pack = packs.filter((pack) => pack.id === id)[0];
 
-  const [_, setIsDrawerOpen] = React.useState(!!pack);
+  const [, setIsDrawerOpen] = React.useState(!!pack);
 
   const handleClose = () => {
     router.back();
