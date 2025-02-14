@@ -1,7 +1,7 @@
 import { BookingForm } from "@/components/booking-form";
 import { defaultMetadata, METADATA_TITLE_SUFFIX } from "@/lib/config";
 import { packs } from "@/lib/constants";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
