@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-const dates = ["15/02", "16/02", "21/02", "22/02", "23/02"];
+const dates = ["21/02", "22/02", "23/02"];
 
 export const BookingForm = ({
   packName,
